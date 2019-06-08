@@ -28,7 +28,7 @@ static const void* TMNavBarAlphaKey    = @"TMNavBarAlphaKey";
 - (void)setTm_interactivePopDisabled:(BOOL)disabled {
     objc_setAssociatedObject(self, TMInteractivePopKey, @(disabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    // 当属性改变是，发送通知，告诉GKNavigationController，让其做出相应处理
+    // 当属性改变是，发送通知，告诉TMNavigationController，让其做出相应处理
     [[NSNotificationCenter defaultCenter] postNotificationName:TMViewControllerPropertyChangedNotification object:@{@"viewController": self}];
 }
 
@@ -39,7 +39,7 @@ static const void* TMNavBarAlphaKey    = @"TMNavBarAlphaKey";
 - (void)setTm_fullScreenPopDisabled:(BOOL)disabled {
     objc_setAssociatedObject(self, TMFullScreenPopKey, @(disabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    // 当属性改变是，发送通知，告诉GKNavigationController，让其做出相应处理
+    // 当属性改变是，发送通知，告诉TMNavigationController，让其做出相应处理
     [[NSNotificationCenter defaultCenter] postNotificationName:TMViewControllerPropertyChangedNotification object:@{@"viewController": self}];
 }
 
@@ -50,7 +50,7 @@ static const void* TMNavBarAlphaKey    = @"TMNavBarAlphaKey";
 - (void)setTm_popMaxAllowedDistanceToLeftEdge:(CGFloat)distance {
     objc_setAssociatedObject(self, TMPopMaxDistanceKey, @(distance), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    // 当属性改变是，发送通知，告诉GKNavigationController，让其做出相应处理
+    // 当属性改变是，发送通知，告诉TMNavigationController，让其做出相应处理
     [[NSNotificationCenter defaultCenter] postNotificationName:TMViewControllerPropertyChangedNotification object:@{@"viewController": self}];
 }
 
@@ -59,11 +59,11 @@ static const void* TMNavBarAlphaKey    = @"TMNavBarAlphaKey";
     return [objc_getAssociatedObject(self, TMNavBarAlphaKey) floatValue];
 }
 
-- (void)setTm_navBarAlpha:(CGFloat)gk_navBarAlpha {
-    objc_setAssociatedObject(self, TMNavBarAlphaKey, @(gk_navBarAlpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setTm_navBarAlpha:(CGFloat)tm_navBarAlpha {
+    objc_setAssociatedObject(self, TMNavBarAlphaKey, @(tm_navBarAlpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     //改变透明度
-    [self.navigationController tm_setNavBarAlpha:gk_navBarAlpha];
+    [self.navigationController tm_setNavBarAlpha:tm_navBarAlpha];
 }
 
 // 自定义返回item

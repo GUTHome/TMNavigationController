@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22BF1FA5013CD10914F3B006 /* libPods-TMNavigationControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D550348744A90B611610772 /* libPods-TMNavigationControllerTests.a */; };
 		619D94EA228AEE0E00C8B91F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 619D94E9228AEE0E00C8B91F /* AppDelegate.m */; };
 		619D94ED228AEE0E00C8B91F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 619D94EC228AEE0E00C8B91F /* ViewController.m */; };
 		619D94F0228AEE0E00C8B91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619D94EE228AEE0E00C8B91F /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 		619D9534228AEE5100C8B91F /* TMWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 619D9527228AEE5100C8B91F /* TMWrapViewController.m */; };
 		619D9535228AEE5100C8B91F /* TMWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 619D9529228AEE5100C8B91F /* TMWrapNavigationController.m */; };
 		619D9536228AEE5100C8B91F /* TMFullScreenPanGestureRecognizerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 619D952E228AEE5100C8B91F /* TMFullScreenPanGestureRecognizerDelegate.m */; };
+		88C113C3DEB4CEAAC4776A97 /* libPods-TMNavigationControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8485012A9DCA38B1BE675E /* libPods-TMNavigationControllerUITests.a */; };
+		D4F537EED53DD37683CAD6F0 /* libPods-TMNavigationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED46A8CB348DA3002576F3B /* libPods-TMNavigationController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F38A32FFF357827A0015AF0 /* Pods-TMNavigationControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMNavigationControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMNavigationControllerUITests/Pods-TMNavigationControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		421D75A2312D01D36BEF7254 /* Pods-TMNavigationControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMNavigationControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMNavigationControllerTests/Pods-TMNavigationControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52DA4EB703DDF502CD8DBCD8 /* Pods-TMNavigationControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMNavigationControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMNavigationControllerTests/Pods-TMNavigationControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D550348744A90B611610772 /* libPods-TMNavigationControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMNavigationControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		619D94E5228AEE0E00C8B91F /* TMNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		619D94E8228AEE0E00C8B91F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		619D94E9228AEE0E00C8B91F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +82,11 @@
 		619D952B228AEE5100C8B91F /* TMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNavigationController.h; sourceTree = "<group>"; };
 		619D952D228AEE5100C8B91F /* TMFullScreenPanGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMFullScreenPanGestureRecognizerDelegate.h; sourceTree = "<group>"; };
 		619D952E228AEE5100C8B91F /* TMFullScreenPanGestureRecognizerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMFullScreenPanGestureRecognizerDelegate.m; sourceTree = "<group>"; };
+		9064CBAD54274C6F3E799154 /* Pods-TMNavigationController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMNavigationController.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMNavigationController/Pods-TMNavigationController.release.xcconfig"; sourceTree = "<group>"; };
+		9ED46A8CB348DA3002576F3B /* libPods-TMNavigationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMNavigationController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8485012A9DCA38B1BE675E /* libPods-TMNavigationControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMNavigationControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B6A1C42D2CC685321E56AD /* Pods-TMNavigationControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMNavigationControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMNavigationControllerUITests/Pods-TMNavigationControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEC751250D27CF3688213AF2 /* Pods-TMNavigationController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMNavigationController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMNavigationController/Pods-TMNavigationController.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F537EED53DD37683CAD6F0 /* libPods-TMNavigationController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BF1FA5013CD10914F3B006 /* libPods-TMNavigationControllerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +110,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C113C3DEB4CEAAC4776A97 /* libPods-TMNavigationControllerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4318093139E1B9B1A5CCF430 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ED46A8CB348DA3002576F3B /* libPods-TMNavigationController.a */,
+				5D550348744A90B611610772 /* libPods-TMNavigationControllerTests.a */,
+				AB8485012A9DCA38B1BE675E /* libPods-TMNavigationControllerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		619D94DC228AEE0E00C8B91F = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +134,8 @@
 				619D9500228AEE0F00C8B91F /* TMNavigationControllerTests */,
 				619D950B228AEE0F00C8B91F /* TMNavigationControllerUITests */,
 				619D94E6228AEE0E00C8B91F /* Products */,
+				A6EC7DA082E5133437ADEC3F /* Pods */,
+				4318093139E1B9B1A5CCF430 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +239,19 @@
 			path = TMPanGestureHandler;
 			sourceTree = "<group>";
 		};
+		A6EC7DA082E5133437ADEC3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEC751250D27CF3688213AF2 /* Pods-TMNavigationController.debug.xcconfig */,
+				9064CBAD54274C6F3E799154 /* Pods-TMNavigationController.release.xcconfig */,
+				421D75A2312D01D36BEF7254 /* Pods-TMNavigationControllerTests.debug.xcconfig */,
+				52DA4EB703DDF502CD8DBCD8 /* Pods-TMNavigationControllerTests.release.xcconfig */,
+				B8B6A1C42D2CC685321E56AD /* Pods-TMNavigationControllerUITests.debug.xcconfig */,
+				3F38A32FFF357827A0015AF0 /* Pods-TMNavigationControllerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 619D9511228AEE0F00C8B91F /* Build configuration list for PBXNativeTarget "TMNavigationController" */;
 			buildPhases = (
+				BB9179CC095423ADC9328FE5 /* [CP] Check Pods Manifest.lock */,
 				619D94E1228AEE0E00C8B91F /* Sources */,
 				619D94E2228AEE0E00C8B91F /* Frameworks */,
 				619D94E3228AEE0E00C8B91F /* Resources */,
+				A810A8708F65D63F00998BAB /* [CP] Embed Pods Frameworks */,
+				DA7B53B3FB174E61C3EFDFE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 619D9514228AEE0F00C8B91F /* Build configuration list for PBXNativeTarget "TMNavigationControllerTests" */;
 			buildPhases = (
+				CE922123108BA1FD7F2B5381 /* [CP] Check Pods Manifest.lock */,
 				619D94F9228AEE0F00C8B91F /* Sources */,
 				619D94FA228AEE0F00C8B91F /* Frameworks */,
 				619D94FB228AEE0F00C8B91F /* Resources */,
+				616467E4A3BD3EDEAA97BD36 /* [CP] Embed Pods Frameworks */,
+				0D2C0B5594C4954DC357B73A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 619D9517228AEE0F00C8B91F /* Build configuration list for PBXNativeTarget "TMNavigationControllerUITests" */;
 			buildPhases = (
+				654EC649DF4995650A1F1C8E /* [CP] Check Pods Manifest.lock */,
 				619D9504228AEE0F00C8B91F /* Sources */,
 				619D9505228AEE0F00C8B91F /* Frameworks */,
 				619D9506228AEE0F00C8B91F /* Resources */,
+				29D9E567304A5CC12C139A87 /* [CP] Embed Pods Frameworks */,
+				2818B7F6E0430CA0066BECC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,6 +385,180 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D2C0B5594C4954DC357B73A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMNavigationControllerTests/Pods-TMNavigationControllerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2818B7F6E0430CA0066BECC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMNavigationControllerUITests/Pods-TMNavigationControllerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29D9E567304A5CC12C139A87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMNavigationControllerUITests/Pods-TMNavigationControllerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		616467E4A3BD3EDEAA97BD36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMNavigationControllerTests/Pods-TMNavigationControllerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		654EC649DF4995650A1F1C8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A810A8708F65D63F00998BAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMNavigationController/Pods-TMNavigationController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB9179CC095423ADC9328FE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE922123108BA1FD7F2B5381 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA7B53B3FB174E61C3EFDFE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMNavigationController/Pods-TMNavigationController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		619D94E1228AEE0E00C8B91F /* Sources */ = {
@@ -521,6 +744,7 @@
 		};
 		619D9512228AEE0F00C8B91F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC751250D27CF3688213AF2 /* Pods-TMNavigationController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +762,7 @@
 		};
 		619D9513228AEE0F00C8B91F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9064CBAD54274C6F3E799154 /* Pods-TMNavigationController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +780,7 @@
 		};
 		619D9515228AEE0F00C8B91F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421D75A2312D01D36BEF7254 /* Pods-TMNavigationControllerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -573,6 +799,7 @@
 		};
 		619D9516228AEE0F00C8B91F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52DA4EB703DDF502CD8DBCD8 /* Pods-TMNavigationControllerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +818,7 @@
 		};
 		619D9518228AEE0F00C8B91F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B6A1C42D2CC685321E56AD /* Pods-TMNavigationControllerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TMNavigationControllerUITests/Info.plist;
@@ -608,6 +836,7 @@
 		};
 		619D9519228AEE0F00C8B91F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F38A32FFF357827A0015AF0 /* Pods-TMNavigationControllerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TMNavigationControllerUITests/Info.plist;

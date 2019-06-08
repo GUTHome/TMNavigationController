@@ -27,11 +27,11 @@
     NSLog(@"--->%ld", self.tm_navigationController.tm_viewControllers.count);
     NSLog(@"--->%@", NSStringFromClass([self.navigationController class]));
     
-    
     if (self.tm_navigationController.tm_viewControllers.count % 2 == 0) {
         self.navigationController.navigationBar.hidden = YES;
     }else{
         [self.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:randomColor] forBarMetrics:(UIBarMetricsDefault)];
+//        [self.navigationController tm_setNavBarAlpha:0.f];
     }
     
     UIButton *button = [UIButton new];
