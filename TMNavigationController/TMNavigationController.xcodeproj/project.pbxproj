@@ -153,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				619D951B228AEE3300C8B91F /* Classes */,
-				619D951A228AEE2C00C8B91F /* Demo */,
 				619D94E8228AEE0E00C8B91F /* AppDelegate.h */,
 				619D94E9228AEE0E00C8B91F /* AppDelegate.m */,
 				619D94EB228AEE0E00C8B91F /* ViewController.h */,
@@ -183,13 +182,6 @@
 				619D950E228AEE0F00C8B91F /* Info.plist */,
 			);
 			path = TMNavigationControllerUITests;
-			sourceTree = "<group>";
-		};
-		619D951A228AEE2C00C8B91F /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Demo;
 			sourceTree = "<group>";
 		};
 		619D951B228AEE3300C8B91F /* Classes */ = {

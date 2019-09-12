@@ -11,5 +11,8 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, assign)BOOL showHead;
+@property (nonatomic, assign)BOOL hiddenNavigationBar;
+
 @end
 

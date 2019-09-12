@@ -12,6 +12,9 @@
 #define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 @interface ViewController ()
+<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong)UITableView *tableView;
 
 @end
 
@@ -19,44 +22,82 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = randomColor;
-    
+    // Do any additional setup after loading the view, typically from a nib.    
     
     NSLog(@"--->%ld", self.navigationController.viewControllers.count);
     NSLog(@"--->%ld", self.tm_navigationController.tm_viewControllers.count);
     NSLog(@"--->%@", NSStringFromClass([self.navigationController class]));
     
-    if (self.tm_navigationController.tm_viewControllers.count % 2 == 0) {
-        self.navigationController.navigationBar.hidden = YES;
-    }else{
-        [self.navigationController.navigationBar setBackgroundImage:[self createImageWithColor:randomColor] forBarMetrics:(UIBarMetricsDefault)];
-//        [self.navigationController tm_setNavBarAlpha:0.f];
+    if (self.hiddenNavigationBar) {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+    self.tableView.frame = self.view.bounds;
+    [self.view addSubview:self.tableView];
+    
+    if (self.showHead) {
+        [self setTm_navBarAlpha:0];
+        
+        UIView *headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 300)];
+        headView.backgroundColor = [UIColor orangeColor];
+        self.tableView.tableHeaderView = headView;
+        self.tableView.contentInset = UIEdgeInsetsMake(-88, 0, 0, 0);
     }
     
-    UIButton *button = [UIButton new];
-    [button setTitle:@"PUSH" forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor orangeColor];
-    button.frame = CGRectMake(0, 0, 200, 100);
-    [self.view addSubview:button];
-    button.center = self.view.center;
-    [button addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)push{
+#pragma mark - tableViewDelegate
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 20;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"UITableViewCell"];
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"---> %ld", (long)indexPath.row];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     ViewController *vc = [ViewController new];
+    vc.showHead = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (UIImage*)createImageWithColor:(UIColor*)color{
-    CGRect rect=CGRectMake(0.0f,0.0f,1.0f,1.0f);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage*theImage=UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return theImage;
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (self.showHead) {
+        CGFloat y = scrollView.contentOffset.y;
+        NSLog(@"-- %f", y);
+        y = (y)/(300-88.f);
+        [self setTm_navBarAlpha:y];
+    }
+}
+
+- (UITableView *)tableView
+{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        _tableView.estimatedRowHeight = 0;
+        _tableView.estimatedSectionFooterHeight = 0;
+        _tableView.estimatedSectionHeaderHeight = 0;
+        _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    }
+    return _tableView;
 }
 
 @end
